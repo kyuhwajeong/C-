@@ -1,0 +1,6 @@
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpListener01\bin\Debug\TcpListener01.exe.config
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpListener01\bin\Debug\TcpListener01.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpListener01\bin\Debug\TcpListener01.pdb
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpListener01\obj\Debug\TcpListener01.csprojResolveAssemblyReference.cache
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpListener01\obj\Debug\TcpListener01.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpListener01\obj\Debug\TcpListener01.pdb

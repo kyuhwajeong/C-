@@ -1,0 +1,5 @@
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\IPHostEntry01\bin\Debug\IPHostEntry01.exe.config
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\IPHostEntry01\bin\Debug\IPHostEntry01.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\IPHostEntry01\bin\Debug\IPHostEntry01.pdb
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\IPHostEntry01\obj\Debug\IPHostEntry01.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\IPHostEntry01\obj\Debug\IPHostEntry01.pdb

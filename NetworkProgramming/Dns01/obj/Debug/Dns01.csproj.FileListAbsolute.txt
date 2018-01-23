@@ -1,0 +1,5 @@
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\Dns01\bin\Debug\Dns01.exe.config
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\Dns01\bin\Debug\Dns01.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\Dns01\bin\Debug\Dns01.pdb
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\Dns01\obj\Debug\Dns01.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\Dns01\obj\Debug\Dns01.pdb

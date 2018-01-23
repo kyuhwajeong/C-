@@ -1,0 +1,6 @@
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\NetworkStreamServer\bin\Debug\NetworkStreamServer.exe.config
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\NetworkStreamServer\bin\Debug\NetworkStreamServer.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\NetworkStreamServer\bin\Debug\NetworkStreamServer.pdb
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\NetworkStreamServer\obj\Debug\연결ECHO_NetworkStreamServer.csprojResolveAssemblyReference.cache
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\NetworkStreamServer\obj\Debug\NetworkStreamServer.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\NetworkStreamServer\obj\Debug\NetworkStreamServer.pdb

@@ -1,0 +1,6 @@
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\IPAddress01\bin\Debug\IPAddress01.exe.config
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\IPAddress01\bin\Debug\IPAddress01.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\IPAddress01\bin\Debug\IPAddress01.pdb
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\IPAddress01\obj\Debug\IPAddress01.csprojResolveAssemblyReference.cache
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\IPAddress01\obj\Debug\IPAddress01.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\IPAddress01\obj\Debug\IPAddress01.pdb

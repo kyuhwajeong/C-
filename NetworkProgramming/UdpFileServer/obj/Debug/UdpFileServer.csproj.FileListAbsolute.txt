@@ -1,0 +1,5 @@
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\UdpFileServer\bin\Debug\UdpFileServer.exe.config
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\UdpFileServer\bin\Debug\UdpFileServer.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\UdpFileServer\bin\Debug\UdpFileServer.pdb
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\UdpFileServer\obj\Debug\UdpFileServer.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\UdpFileServer\obj\Debug\UdpFileServer.pdb

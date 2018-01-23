@@ -1,0 +1,6 @@
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpEchoServer\bin\Debug\TcpEchoServer.exe.config
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpEchoServer\bin\Debug\TcpEchoServer.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpEchoServer\bin\Debug\TcpEchoServer.pdb
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpEchoServer\obj\Debug\TcpEchoServer.csprojResolveAssemblyReference.cache
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpEchoServer\obj\Debug\TcpEchoServer.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpEchoServer\obj\Debug\TcpEchoServer.pdb

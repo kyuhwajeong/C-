@@ -1,0 +1,3 @@
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpClient01\bin\Debug\TcpClient01.exe.config
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpClient01\obj\Debug\TcpClient01.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\TcpClient01\obj\Debug\TcpClient01.pdb
