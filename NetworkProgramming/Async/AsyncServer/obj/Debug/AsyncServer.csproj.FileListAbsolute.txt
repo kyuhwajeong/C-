@@ -1,0 +1,8 @@
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\AsyncServer\bin\Debug\AsyncServer.exe.config
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\AsyncServer\obj\Debug\AsyncServer.MainForm.resources
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\AsyncServer\obj\Debug\AsyncServer.Properties.Resources.resources
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\AsyncServer\obj\Debug\AsyncServer.csproj.GenerateResource.Cache
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\AsyncServer\bin\Debug\AsyncServer.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\AsyncServer\bin\Debug\AsyncServer.pdb
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\AsyncServer\obj\Debug\AsyncServer.exe
+C:\Users\kyuhwa\Documents\dev\NetworkProgramming\AsyncServer\obj\Debug\AsyncServer.pdb
