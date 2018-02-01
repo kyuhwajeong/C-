@@ -26,7 +26,48 @@ namespace AsyncSocketClient
             client.OnSend += new Client.OnSendEventHandler(client_OnSend);
             client.OnDisconnect += new Client.OnDisconnectEventHandler(client_OnDisconnect);
             client.OnDisconnectByServer += new Client.OnDisconnectByServerEventHandler(client_OnDisconnectByServer);
+            #region ServerReceive
+            client.DataReceived += new Client.DataReceivedEventHandler(client_DataReceived);
+            #endregion
+
         }
+        #region ServerReceive define
+        void client_DataReceived(Client sender, ReceiveBuffer e)
+        {
+            BinaryReader r = new BinaryReader(e.BufStream);
+
+            Commands header = (Commands)r.ReadInt32();
+
+            switch (header)
+            {
+                case Commands.String:
+                    {
+                        string s = r.ReadString();
+
+                        Invoke((MethodInvoker)delegate
+                        {
+                            //lstText.Items.Add(s);
+                            txtServer.Text = s;
+                        });
+                    }
+                    break;
+                case Commands.Image:
+                    {
+                        int imageBytesLen = r.ReadInt32();
+
+                        byte[] iBytes = r.ReadBytes(imageBytesLen);
+
+                        Invoke((MethodInvoker)delegate
+                        {
+                            //pbImage.Image = Image.FromStream(new MemoryStream(iBytes));
+                        });
+
+                        iBytes = null;
+                    }
+                    break;
+            }
+        }
+        #endregion
 
         void client_OnDisconnectByServer(Client sender)
         {

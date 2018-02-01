@@ -46,9 +46,11 @@ namespace AsyncSocketServer
             btnClose.Enabled = true;
         }
 
+        Client client;
         void listener_Accepted(Socket e)
         {
-            Client client = new Client(e);
+            client = new Client(e);
+//            Client client = new Client(e);
             ClientList.Add(client);
 
             client.DataReceived += new Client.DataReceivedEventHandler(client_DataReceived);
@@ -88,6 +90,8 @@ namespace AsyncSocketServer
                 case Commands.String:
                     {
                         string s = r.ReadString();
+                        SendText(s);
+
                         Invoke((MethodInvoker)delegate
                         {
                             lstText.Items.Add(s);
@@ -111,6 +115,33 @@ namespace AsyncSocketServer
             }
         }
 
+        #region ClientSend
+        void SendText(string text)
+        {
+            BinaryWriter bw = new BinaryWriter(new MemoryStream());
+            bw.Write((int)Commands.String);
+            bw.Write(text);
+            byte[] data = ((MemoryStream)bw.BaseStream).ToArray();
+            bw.BaseStream.Dispose();
+            client.Send(data, 0, data.Length);
+            data = null;
+        }
+
+        void SendImage(string path)
+        {
+            MemoryStream ms = new MemoryStream();
+            BinaryWriter bw = new BinaryWriter(ms);
+            byte[] b = File.ReadAllBytes(path);
+            bw.Write((int)Commands.Image);
+            bw.Write((int)b.Length);
+            bw.Write(b);
+            bw.Close();
+            b = ms.ToArray();
+            ms.Dispose();
+
+            client.Send(b, 0, b.Length);
+        }
+        #endregion
         void btnClose_Click(object sender, EventArgs e)
         {
             foreach(Client client in ClientList)

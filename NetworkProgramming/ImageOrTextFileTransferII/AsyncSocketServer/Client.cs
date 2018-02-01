@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
+using System.Diagnostics;
 
 namespace AsyncSocketServer
 {
@@ -180,7 +181,39 @@ namespace AsyncSocketServer
 
             ReceiveAsync();
         }
+
+        #region ClientSend
+        public delegate void OnSendEventHandler(Client sender, int sent);
+        public event OnSendEventHandler OnSend;
+        public void Send(byte[] data, int index, int length)
+        {
+            socket.BeginSend(BitConverter.GetBytes(length), 0, 4, SocketFlags.None, sendCallBack, null);
+            System.Threading.Thread.Sleep(500);
+            socket.BeginSend(data, index, length, SocketFlags.None, sendCallBack, null);
+        }
+
+        public void sendCallBack(IAsyncResult ar)
+        {
+            try
+            {
+                int sent = socket.EndSend(ar);
+
+                if (OnSend != null)
+                {
+                    OnSend(this, sent);
+                }
+            }
+            catch (Exception ex)
+            {
+                Trace.WriteLine(string.Format("SEND ERROR\n{0}", ex.Message));
+            }
+        }
+        #endregion
+
     }
+
     #endregion
+
+
 
 }
