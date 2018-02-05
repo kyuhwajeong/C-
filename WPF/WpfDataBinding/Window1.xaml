@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfDataBinding.Window1"
+        xmlns:cs="clr-namespace:WpfDataBinding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="351" Width="500">
+    <Window.Resources>
+        <cs:NameAdds x:Key="names">
+            <cs:NameAdd Name="홍길동" Add="서울특별시 강남구" />
+            <cs:NameAdd Name="이순신" Add="경기도 구리시" />
+            <cs:NameAdd Name="유관순" Add="인천광역시 중구" />
+        </cs:NameAdds>
+    </Window.Resources>
+    <Grid x:Name="Maingrid" DataContext="{StaticResource names}" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="74*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="15*" />
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="35*" />
+            <ColumnDefinition Width="10*" />
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="2" Grid.Column="0" Name="label1" Content="성명 : " />
+        <TextBox Grid.Row="2" Grid.Column="1"  Name="txtName" Text="{Binding Path=Name}" />
+        <Label Grid.Row="2" Grid.Column="2" Name="label2" Content="주소 : " />
+        <TextBox Grid.Row="2" Grid.Column="3"  Name="txtAddress" Text="{Binding Path=Add}" />
+        <Button Grid.Row="0" Grid.Column="0" Name="insertbutton" Content="추가" Click="insertbutton_Click" Margin="3" ></Button>
+
+        <ListBox Grid.Row="4" Grid.ColumnSpan="5" Name="list" ItemsSource="{Binding}" IsSynchronizedWithCurrentItem="True" 
+                 FontSize="12" FontWeight="bold" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock>
+            <TextBlock Text="{Binding Path=Name}" />
+            <TextBlock Text=" :  " />
+            <TextBlock Text="{Binding Path=Add}" />
+          </TextBlock>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

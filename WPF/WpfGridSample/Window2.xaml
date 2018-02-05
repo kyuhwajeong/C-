@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfGridSample.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window2" Height="300" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33*" />
+            <ColumnDefinition Width="33*" />
+            <ColumnDefinition Width="34*" />
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="0" Height="150" Width="150" >
+            <TextBlock Width="100">텍스트 상자</TextBlock>
+        </Button>
+
+        <Button Grid.Column="1" Height="150" Width="150" >
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Image Source="gain.jpg" />
+        </Button>
+
+        <Button Grid.Column="2" Height="150" Width="150" >
+            <Grid Height="150" Width="150">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70*" />
+                    <RowDefinition Height="30*" />
+                </Grid.RowDefinitions>
+                <Image Source="gain.jpg" Grid.Row="0" />
+                <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" >한가인</TextBlock>
+            </Grid>
+        </Button>
+    </Grid>
+</Window>

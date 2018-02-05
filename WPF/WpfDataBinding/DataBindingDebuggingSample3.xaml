@@ -1,0 +1,9 @@
+﻿<Window x:Class="WpfDataBinding.DataBindingDebuggingSample3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:diag="clr-namespace:System.Diagnostics;assembly=WindowsBase"
+        Title="DataBindingDebuggingSample" Height="100" Width="200">
+    <Grid Margin="10">
+        <TextBlock Text="{Binding Title, diag:PresentationTraceSources.TraceLevel=High}" />
+    </Grid>
+</Window>
