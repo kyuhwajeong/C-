@@ -23,6 +23,9 @@ namespace HelloWorld
         public MainWindow()
         {
             InitializeComponent();
+
+            Form1 form = new Form1();
+            form.ShowDialog();
         }
     }
 }

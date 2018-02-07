@@ -1,0 +1,8 @@
+﻿<Window x:Class="WpfTextBlock.TextBlockSample_Margin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TextBlockSample" Height="100" Width="200">
+    <Grid>
+        <TextBlock Margin="10">This is a TextBlock control and it comes with a very long text</TextBlock>
+    </Grid>
+</Window>
