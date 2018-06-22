@@ -399,6 +399,11 @@ namespace SocketAsync_Client
 			this.m_SocketCient.SendMsg(CCommand.Command.Image, byteTemp);
 		}
 
+        private void btnTRSelect_Click(object sender, EventArgs e)
+        {
+            this.m_SocketCient.SendMsg(CCommand.Command.TRSelect, "AAABBBBCCCC");
+        }
+
 		
 	}
 }

@@ -66,6 +66,11 @@ namespace SocketGlobal
 			/// 메시지 전송(C↔S)
 			/// </summary>
 			Msg,
+
+            /// <summary>
+            /// 메시지 전송(C↔S)
+            /// </summary>
+            TRSelect,
 		}
 
 		/// <summary>

@@ -231,6 +231,10 @@ namespace SocketAsync_Server
 				case CCommand.Command.Image:	//이미지
 					this.Commd_Image(dsRecieveMsg.Data_Byte);
 					break;
+
+                case CCommand.Command.TRSelect:
+                    Commd_TRSelect(sender);
+                    break;
 			}
 
 		}
@@ -323,6 +327,14 @@ namespace SocketAsync_Server
 						}));
 
 		}
+
+        private void Commd_TRSelect(claUser sender)
+        {
+            sender.SendMsg_User(CCommand.Command.TRSelect, "trselect");
+
+			//로그 출력
+			DisplayLog("trselect");
+        }
 
 		/// <summary>
 		/// 접속중인 모든 유저에게 메시지를 보냅니다.
